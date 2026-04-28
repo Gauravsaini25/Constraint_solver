@@ -105,18 +105,4 @@ cmake --build build
 - **RMS error**: Normalized metric — threshold is meaningful regardless of constraint count
 - **Fixed points**: Boolean flag on Point — constraints check this and skip movement
 
-## Extending to Production Level
 
-To evolve this into something comparable to Autodesk's solvers:
-
-1. **Newton-Raphson solver**: Replace iterative relaxation with Jacobian-based solving for quadratic convergence
-2. **Constraint graph analysis**: Detect under/over-constrained subsystems, find rigid clusters
-3. **Line/Circle/Arc primitives**: Add geometric entities beyond points
-4. **Parametric dimensions**: Link constraint values to expressions
-5. **Undo/Redo**: Snapshot and restore point positions
-6. **DOF analysis**: Report remaining degrees of freedom per point
-7. **Prioritized constraints**: Weight certain constraints higher during solving
-
-## License
-
-MIT
